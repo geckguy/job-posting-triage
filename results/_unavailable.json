@@ -1,0 +1,32 @@
+{
+  "classifier_dev": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 54.4
+  },
+  "tfidf": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 86.7
+  },
+  "classifier_dev_no_rubric": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 6.5
+  },
+  "gliner": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 1915.4
+  },
+  "llm_hosted_json_object": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 1259.9
+  },
+  "llm_local": {
+    "status": "ok",
+    "rows": 3147,
+    "seconds": 3249.2
+  }
+}

@@ -1,0 +1,1300 @@
+{
+  "split": "test",
+  "window": 3182,
+  "frame_source": "derived from record indices",
+  "frame": {
+    "fraudulent": {
+      "union": 3182,
+      "shared": 3182,
+      "per_arm": {
+        "classifier_dev": 3182,
+        "tfidf": 3182
+      },
+      "majority_set_size": 3182,
+      "majority_arms": [
+        "classifier_dev",
+        "tfidf"
+      ],
+      "majority_arm": "classifier_dev",
+      "mismatch": false,
+      "mismatched_arms": [],
+      "symdiff_vs_majority": {},
+      "only_in_arm": {},
+      "missing_from_arm": {}
+    }
+  },
+  "window_note": "derived as the highest record index seen plus one over the 3182 record ids in the results; no frame was recorded, so this cannot distinguish a random sample from a prefix and the draw cannot be reconstructed",
+  "records_sent": 3182,
+  "records_per_arm": {
+    "classifier_dev": 3182,
+    "tfidf": 3182
+  },
+  "row_count": 6364,
+  "arm_count": 2,
+  "arms": [
+    "classifier_dev",
+    "tfidf"
+  ],
+  "unavailable": {},
+  "per_question": {
+    "fraudulent": {
+      "labels": [
+        "legitimate",
+        "fraudulent"
+      ],
+      "kind": "binary, rare positive",
+      "gold_distribution": {
+        "legitimate": 3044,
+        "fraudulent": 138
+      },
+      "majority_label": "legitimate",
+      "scored_records": 3182,
+      "subset_arm": "classifier_dev",
+      "rows": {
+        "classifier_dev": {
+          "n": 3182,
+          "accuracy": 0.9528598365807668,
+          "macro_f1": 0.6012464702835469,
+          "macro_f1_labels": [
+            "legitimate",
+            "fraudulent"
+          ],
+          "per_class": {
+            "legitimate": {
+              "precision": 0.9628918746001279,
+              "recall": 0.9888304862023654,
+              "f1": 0.9756888168557536,
+              "support": 3044
+            },
+            "fraudulent": {
+              "precision": 0.39285714285714285,
+              "recall": 0.15942028985507245,
+              "f1": 0.2268041237113402,
+              "support": 138
+            }
+          },
+          "per_class_precision_undefined": null,
+          "pr_auc": 0.18246135307249747,
+          "precision_ci95": [
+            0.2758041573011051,
+            0.5236659719957729
+          ],
+          "recall_ci95": [
+            0.1076989286057533,
+            0.22958933124760794
+          ],
+          "f1_ci95": [
+            0.15204308238951808,
+            0.30694973343488186
+          ],
+          "ci_note": "138 positives in this frame",
+          "f1_positive": 0.22680412371134018,
+          "precision_positive": 0.39285714285714285,
+          "recall_positive": 0.15942028985507245,
+          "positive_label": "fraudulent",
+          "positives": 138,
+          "confusion": {
+            "tp": 22,
+            "fp": 34,
+            "fn": 116,
+            "tn": 3010,
+            "no_call": 0,
+            "no_call_invalid": 0,
+            "no_call_positives": 0,
+            "sum": 3182
+          },
+          "mae": null,
+          "within_one": null,
+          "ordinal_n": 0,
+          "ordinal_excluded": 0,
+          "invalid_json_rate": 0.0,
+          "invalid_reasons": null,
+          "invalid_rows": 0,
+          "brier": 0.05179252042740415,
+          "ece": 0.046033940917661866,
+          "calibration_n": 3182,
+          "calibration_excluded": 0,
+          "calibration_excluded_invalid": 0,
+          "calibration_excluded_valid": 0,
+          "latency_p50": 10.972450620679247,
+          "latency_p95": 10.972450620679247,
+          "latency_n": 3182,
+          "tokens_in_mean": null,
+          "tokens_out_mean": null,
+          "rows": 3182
+        },
+        "tfidf": {
+          "n": 3182,
+          "accuracy": 0.9748585795097423,
+          "macro_f1": 0.8396007662062708,
+          "macro_f1_labels": [
+            "legitimate",
+            "fraudulent"
+          ],
+          "per_class": {
+            "legitimate": {
+              "precision": 0.984313725490196,
+              "recall": 0.9894875164257556,
+              "f1": 0.9868938401048493,
+              "support": 3044
+            },
+            "fraudulent": {
+              "precision": 0.7377049180327869,
+              "recall": 0.6521739130434783,
+              "f1": 0.6923076923076923,
+              "support": 138
+            }
+          },
+          "per_class_precision_undefined": null,
+          "pr_auc": 0.760952167033874,
+          "precision_ci95": [
+            0.6532518201317449,
+            0.8076455704702
+          ],
+          "recall_ci95": [
+            0.5695636217454384,
+            0.7265416238519958
+          ],
+          "f1_ci95": [
+            0.6255368942731279,
+            0.7535263821736389
+          ],
+          "ci_note": "138 positives in this frame",
+          "f1_positive": 0.6923076923076924,
+          "precision_positive": 0.7377049180327869,
+          "recall_positive": 0.6521739130434783,
+          "positive_label": "fraudulent",
+          "positives": 138,
+          "confusion": {
+            "tp": 90,
+            "fp": 32,
+            "fn": 48,
+            "tn": 3012,
+            "no_call": 0,
+            "no_call_invalid": 0,
+            "no_call_positives": 0,
+            "sum": 3182
+          },
+          "mae": null,
+          "within_one": null,
+          "ordinal_n": 0,
+          "ordinal_excluded": 0,
+          "invalid_json_rate": 0.0,
+          "invalid_reasons": null,
+          "invalid_rows": 0,
+          "brier": 0.02783872873522382,
+          "ece": 0.032676287481157494,
+          "calibration_n": 3182,
+          "calibration_excluded": 0,
+          "calibration_excluded_invalid": 0,
+          "calibration_excluded_valid": 0,
+          "latency_p50": 0.0013471741103734014,
+          "latency_p95": 0.0013471741103734014,
+          "latency_n": 3182,
+          "tokens_in_mean": null,
+          "tokens_out_mean": null,
+          "rows": 3182
+        }
+      },
+      "baselines": {
+        "majority_class": {
+          "n": 3182,
+          "accuracy": 0.9566310496543055,
+          "macro_f1": 0.4889174429810472,
+          "macro_f1_labels": [
+            "legitimate",
+            "fraudulent"
+          ],
+          "per_class": {
+            "legitimate": {
+              "precision": 0.9566310496543055,
+              "recall": 1.0,
+              "f1": 0.9778348859620944,
+              "support": 3044
+            },
+            "fraudulent": {
+              "precision": null,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 138
+            }
+          },
+          "per_class_precision_undefined": [
+            "fraudulent"
+          ],
+          "pr_auc": null,
+          "precision_ci95": null,
+          "recall_ci95": [
+            1.734723475976807e-18,
+            0.027082764465572957
+          ],
+          "f1_ci95": [
+            0.0,
+            0.0
+          ],
+          "ci_note": "138 positives in this frame",
+          "f1_positive": 0.0,
+          "precision_positive": null,
+          "recall_positive": 0.0,
+          "positive_label": "fraudulent",
+          "positives": 138,
+          "confusion": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 138,
+            "tn": 3044,
+            "no_call": 0,
+            "no_call_invalid": 0,
+            "no_call_positives": 0,
+            "sum": 3182
+          },
+          "mae": null,
+          "within_one": null,
+          "ordinal_n": 0,
+          "ordinal_excluded": 0,
+          "invalid_json_rate": 0.0,
+          "invalid_reasons": null,
+          "invalid_rows": 0,
+          "brier": null,
+          "ece": null,
+          "calibration_n": 0,
+          "calibration_excluded": 3182,
+          "calibration_excluded_invalid": 0,
+          "calibration_excluded_valid": 3182,
+          "latency_p50": null,
+          "latency_p95": null,
+          "latency_n": 0,
+          "tokens_in_mean": null,
+          "tokens_out_mean": null,
+          "rows": 3182
+        },
+        "dummy_stratified": {
+          "n": 3182,
+          "accuracy": 0.9088623507228158,
+          "macro_f1": 0.49909892305019976,
+          "macro_f1_labels": [
+            "legitimate",
+            "fraudulent"
+          ],
+          "per_class": {
+            "legitimate": {
+              "precision": 0.9565649867374005,
+              "recall": 0.9477660972404731,
+              "f1": 0.9521452145214522,
+              "support": 3044
+            },
+            "fraudulent": {
+              "precision": 0.04216867469879518,
+              "recall": 0.050724637681159424,
+              "f1": 0.046052631578947366,
+              "support": 138
+            }
+          },
+          "per_class_precision_undefined": null,
+          "pr_auc": 0.04330806679838804,
+          "precision_ci95": [
+            0.02057424428963385,
+            0.08447348048014569
+          ],
+          "recall_ci95": [
+            0.024785423632257546,
+            0.10099908936579352
+          ],
+          "f1_ci95": [
+            0.013513513513513514,
+            0.08050317415642488
+          ],
+          "ci_note": "138 positives in this frame",
+          "f1_positive": 0.046052631578947366,
+          "precision_positive": 0.04216867469879518,
+          "recall_positive": 0.050724637681159424,
+          "positive_label": "fraudulent",
+          "positives": 138,
+          "confusion": {
+            "tp": 7,
+            "fp": 159,
+            "fn": 131,
+            "tn": 2885,
+            "no_call": 0,
+            "no_call_invalid": 0,
+            "no_call_positives": 0,
+            "sum": 3182
+          },
+          "mae": null,
+          "within_one": null,
+          "ordinal_n": 0,
+          "ordinal_excluded": 0,
+          "invalid_json_rate": 0.0,
+          "invalid_reasons": null,
+          "invalid_rows": 0,
+          "brier": 0.09113764927718417,
+          "ece": 0.09113764927718415,
+          "calibration_n": 3182,
+          "calibration_excluded": 0,
+          "calibration_excluded_invalid": 0,
+          "calibration_excluded_valid": 0,
+          "latency_p50": null,
+          "latency_p95": null,
+          "latency_n": 0,
+          "tokens_in_mean": null,
+          "tokens_out_mean": null,
+          "rows": 3182
+        }
+      }
+    },
+    "required_experience": {
+      "labels": [
+        "internship",
+        "entry_level",
+        "associate",
+        "mid_senior",
+        "director",
+        "executive",
+        "not_applicable"
+      ],
+      "kind": "7-way, 6 ordered levels + not_applicable",
+      "gold_distribution": null,
+      "majority_label": null,
+      "rows": {},
+      "baselines": {},
+      "scored_records": 0,
+      "subset_arm": null
+    },
+    "required_education": {
+      "labels": [
+        "bachelors",
+        "high_school",
+        "unspecified",
+        "masters",
+        "associate",
+        "certification",
+        "other"
+      ],
+      "kind": "7-way categorical",
+      "gold_distribution": null,
+      "majority_label": null,
+      "rows": {},
+      "baselines": {},
+      "scored_records": 0,
+      "subset_arm": null
+    },
+    "salary_range_stated": {
+      "labels": [
+        "stated",
+        "not_stated"
+      ],
+      "kind": "control",
+      "gold_distribution": null,
+      "majority_label": null,
+      "rows": {},
+      "baselines": {},
+      "scored_records": 0,
+      "subset_arm": null
+    }
+  },
+  "routing": {
+    "classifier_dev": [
+      {
+        "tau": 0.5,
+        "coverage": 0.017913262099308613,
+        "precision": 0.38596491228070173,
+        "recall": 0.15942028985507245,
+        "false_negatives": 116,
+        "positives_acted_on": 22,
+        "positives_total": 138,
+        "acted": 57,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.010685103708359522,
+        "precision": 0.5588235294117647,
+        "recall": 0.13768115942028986,
+        "false_negatives": 119,
+        "positives_acted_on": 19,
+        "positives_total": 138,
+        "acted": 34,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.005971087366436203,
+        "precision": 0.7368421052631579,
+        "recall": 0.10144927536231885,
+        "false_negatives": 124,
+        "positives_acted_on": 14,
+        "positives_total": 138,
+        "acted": 19,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.95,
+        "coverage": 0.004714016341923318,
+        "precision": 0.6666666666666666,
+        "recall": 0.07246376811594203,
+        "false_negatives": 128,
+        "positives_acted_on": 10,
+        "positives_total": 138,
+        "acted": 15,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      }
+    ],
+    "tfidf": [
+      {
+        "tau": 0.5,
+        "coverage": 0.006599622878692646,
+        "precision": 1.0,
+        "recall": 0.15217391304347827,
+        "false_negatives": 117,
+        "positives_acted_on": 21,
+        "positives_total": 138,
+        "acted": 21,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.0021998742928975488,
+        "precision": 1.0,
+        "recall": 0.050724637681159424,
+        "false_negatives": 131,
+        "positives_acted_on": 7,
+        "positives_total": 138,
+        "acted": 7,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": "nothing reaches p_positive >= 0.9"
+      },
+      {
+        "tau": 0.95,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": "nothing reaches p_positive >= 0.95"
+      }
+    ],
+    "majority_class": [
+      {
+        "tau": 0.5,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 3182,
+        "note": "nothing reaches p_positive >= 0.5 (3182 row(s) carry no p_positive)"
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 3182,
+        "note": "nothing reaches p_positive >= 0.7 (3182 row(s) carry no p_positive)"
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 3182,
+        "note": "nothing reaches p_positive >= 0.9 (3182 row(s) carry no p_positive)"
+      },
+      {
+        "tau": 0.95,
+        "coverage": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "false_negatives": 138,
+        "positives_acted_on": 0,
+        "positives_total": 138,
+        "acted": 0,
+        "scored": 3182,
+        "records_without_p_positive": 3182,
+        "note": "nothing reaches p_positive >= 0.95 (3182 row(s) carry no p_positive)"
+      }
+    ],
+    "dummy_stratified": [
+      {
+        "tau": 0.5,
+        "coverage": 0.05216844751728473,
+        "precision": 0.04216867469879518,
+        "recall": 0.050724637681159424,
+        "false_negatives": 131,
+        "positives_acted_on": 7,
+        "positives_total": 138,
+        "acted": 166,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.7,
+        "coverage": 0.05216844751728473,
+        "precision": 0.04216867469879518,
+        "recall": 0.050724637681159424,
+        "false_negatives": 131,
+        "positives_acted_on": 7,
+        "positives_total": 138,
+        "acted": 166,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.9,
+        "coverage": 0.05216844751728473,
+        "precision": 0.04216867469879518,
+        "recall": 0.050724637681159424,
+        "false_negatives": 131,
+        "positives_acted_on": 7,
+        "positives_total": 138,
+        "acted": 166,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      },
+      {
+        "tau": 0.95,
+        "coverage": 0.05216844751728473,
+        "precision": 0.04216867469879518,
+        "recall": 0.050724637681159424,
+        "false_negatives": 131,
+        "positives_acted_on": 7,
+        "positives_total": 138,
+        "acted": 166,
+        "scored": 3182,
+        "records_without_p_positive": 0,
+        "note": ""
+      }
+    ]
+  },
+  "leakage_guard": {},
+  "calibration_bins": {
+    "classifier_dev": {
+      "fraudulent": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n": 16,
+          "mean_p": 0.051875,
+          "accuracy": 0.8125
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n": 23,
+          "mean_p": 0.14130434782608695,
+          "accuracy": 0.4782608695652174
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n": 12,
+          "mean_p": 0.23583333333333334,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n": 19,
+          "mean_p": 0.34157894736842104,
+          "accuracy": 0.6842105263157895
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n": 22,
+          "mean_p": 0.43636363636363634,
+          "accuracy": 0.6818181818181818
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n": 25,
+          "mean_p": 0.5388000000000001,
+          "accuracy": 0.88
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n": 44,
+          "mean_p": 0.6488636363636364,
+          "accuracy": 0.9318181818181818
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n": 65,
+          "mean_p": 0.7524615384615385,
+          "accuracy": 0.9384615384615385
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n": 109,
+          "mean_p": 0.8513761467889909,
+          "accuracy": 0.9357798165137615
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n": 2847,
+          "mean_p": 0.9867263786441869,
+          "accuracy": 0.9638215665612926
+        }
+      ]
+    },
+    "tfidf": {
+      "fraudulent": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n": 57,
+          "mean_p": 0.13099722445418904,
+          "accuracy": 0.43859649122807015
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n": 24,
+          "mean_p": 0.2539606839962073,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n": 12,
+          "mean_p": 0.36059416342045464,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n": 8,
+          "mean_p": 0.4211181965756189,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n": 5,
+          "mean_p": 0.546010640368999,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n": 9,
+          "mean_p": 0.6571198308118075,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n": 5,
+          "mean_p": 0.7567421817484136,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n": 2,
+          "mean_p": 0.8282188783769465,
+          "accuracy": 1.0
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n": 3060,
+          "mean_p": 0.9681966663878632,
+          "accuracy": 0.984313725490196
+        }
+      ]
+    },
+    "majority_class": {
+      "fraudulent": []
+    },
+    "dummy_stratified": {
+      "fraudulent": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n": 0,
+          "mean_p": null,
+          "accuracy": null
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n": 3182,
+          "mean_p": 1.0,
+          "accuracy": 0.9088623507228158
+        }
+      ]
+    }
+  },
+  "cost": {
+    "classifier_dev": {
+      "classifications": 3182,
+      "requests": null,
+      "seconds": null,
+      "rows": 3182,
+      "records": 3182
+    },
+    "tfidf": {
+      "classifications": null,
+      "requests": null,
+      "seconds": null,
+      "rows": 3182,
+      "records": 3182
+    }
+  },
+  "cost_note": "Per-row latency is wall clock on the machine that ran the arm; arms that ran concurrently include each other's load in these numbers, so the projection is an upper bound for this machine rather than a benchmark.",
+  "cost_note_default": true,
+  "ablation": null,
+  "n_a": [
+    {
+      "arm": null,
+      "question": "fraudulent",
+      "metric": "dummy_stratified",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": null,
+      "question": "fraudulent",
+      "metric": "majority_class",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": null,
+      "question": "required_education",
+      "metric": "gold_distribution",
+      "reason": "not computed for arm None on question 'required_education'"
+    },
+    {
+      "arm": null,
+      "question": "required_education",
+      "metric": "majority_label",
+      "reason": "not computed for arm None on question 'required_education'"
+    },
+    {
+      "arm": null,
+      "question": "required_education",
+      "metric": "subset_arm",
+      "reason": "not computed for arm None on question 'required_education'"
+    },
+    {
+      "arm": null,
+      "question": "required_experience",
+      "metric": "gold_distribution",
+      "reason": "not computed for arm None on question 'required_experience'"
+    },
+    {
+      "arm": null,
+      "question": "required_experience",
+      "metric": "majority_label",
+      "reason": "not computed for arm None on question 'required_experience'"
+    },
+    {
+      "arm": null,
+      "question": "required_experience",
+      "metric": "subset_arm",
+      "reason": "not computed for arm None on question 'required_experience'"
+    },
+    {
+      "arm": null,
+      "question": "salary_range_stated",
+      "metric": "gold_distribution",
+      "reason": "not computed for arm None on question 'salary_range_stated'"
+    },
+    {
+      "arm": null,
+      "question": "salary_range_stated",
+      "metric": "majority_label",
+      "reason": "not computed for arm None on question 'salary_range_stated'"
+    },
+    {
+      "arm": null,
+      "question": "salary_range_stated",
+      "metric": "subset_arm",
+      "reason": "not computed for arm None on question 'salary_range_stated'"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": null,
+      "metric": "requests",
+      "reason": "the runner records result rows, not HTTP requests, so the request count was never measured"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": null,
+      "metric": "seconds",
+      "reason": "the runner recorded no wall clock time for this arm (no entry in _unavailable.json)"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "invalid_reasons",
+      "reason": "no row of this arm is marked invalid for this question"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "mae",
+      "reason": "no row has both an ordinal gold and an ordinal prediction"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "per_class_precision_undefined",
+      "reason": "not computed for arm 'classifier_dev' on question 'fraudulent'"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "tokens_in_mean",
+      "reason": "no row of this arm carries a prompt token count"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "tokens_out_mean",
+      "reason": "no row of this arm carries a completion token count"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "fraudulent",
+      "metric": "within_one",
+      "reason": "no row has both an ordinal gold and an ordinal prediction"
+    },
+    {
+      "arm": "classifier_dev",
+      "question": "salary_range_stated",
+      "metric": "leakage_guard",
+      "reason": "produced no `salary_range_stated` rows, so the leakage guard does not cover it"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "calibration_bin",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "invalid_reasons",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "latency_p50",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "latency_p95",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "mae",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "per_class_precision_undefined",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "tokens_in_mean",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "tokens_out_mean",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "dummy_stratified",
+      "question": "fraudulent",
+      "metric": "within_one",
+      "reason": "sklearn DummyClassifier(strategy='stratified', random_state=0) fitted on 12725 train+validation gold rows, predicting on the 3182 scored records; its predict_proba is one-hot on the sampled label, so it is a certainty-asserting floor"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "brier",
+      "reason": "no row of majority_class carries a usable p_decision for fraudulent (confidence and probabilities are both absent or null)"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "ece",
+      "reason": "no row of majority_class carries a usable p_decision for fraudulent (confidence and probabilities are both absent or null)"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "invalid_reasons",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "latency_p50",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "latency_p95",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "mae",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "per_class_precision[fraudulent]",
+      "reason": "no row of this arm was predicted with this label, so precision has no denominator and is undefined"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "pr_auc",
+      "reason": "no majority_class row carries p_positive for fraudulent"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "precision",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "precision_ci95",
+      "reason": "no positives (or no positive predictions) in the scored subset, so the interval has no denominator"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "precision_positive",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "tokens_in_mean",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "tokens_out_mean",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "majority_class",
+      "question": "fraudulent",
+      "metric": "within_one",
+      "reason": "always predicts 'legitimate' (3044/3182 = 95.7% of the scored subset) and carries no distribution, so brier, ece, pr_auc and the routing sweep are null for it"
+    },
+    {
+      "arm": "tfidf",
+      "question": null,
+      "metric": "classifications",
+      "reason": "classifications are a classifier.dev unit: this arm's rows are not classifier.dev classifications"
+    },
+    {
+      "arm": "tfidf",
+      "question": null,
+      "metric": "requests",
+      "reason": "the runner records result rows, not HTTP requests, so the request count was never measured"
+    },
+    {
+      "arm": "tfidf",
+      "question": null,
+      "metric": "seconds",
+      "reason": "the runner recorded no wall clock time for this arm (no entry in _unavailable.json)"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "calibration_bin",
+      "reason": "not computed for arm 'tfidf' on question 'fraudulent'"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "invalid_reasons",
+      "reason": "no row of this arm is marked invalid for this question"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "mae",
+      "reason": "no row has both an ordinal gold and an ordinal prediction"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "per_class_precision_undefined",
+      "reason": "not computed for arm 'tfidf' on question 'fraudulent'"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "precision",
+      "reason": "nothing reaches this threshold, so precision is undefined"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "tokens_in_mean",
+      "reason": "no row of this arm carries a prompt token count"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "tokens_out_mean",
+      "reason": "no row of this arm carries a completion token count"
+    },
+    {
+      "arm": "tfidf",
+      "question": "fraudulent",
+      "metric": "within_one",
+      "reason": "no row has both an ordinal gold and an ordinal prediction"
+    },
+    {
+      "arm": "tfidf",
+      "question": "salary_range_stated",
+      "metric": "leakage_guard",
+      "reason": "produced no `salary_range_stated` rows, so the leakage guard does not cover it"
+    }
+  ],
+  "results_dir": "results/fullsplit",
+  "files_read": {
+    "classifier_dev.jsonl": 3182,
+    "tfidf.jsonl": 3182
+  },
+  "gold_source": {
+    "from_dataset": 6364,
+    "from_row_field": 0,
+    "dataset_errors": {},
+    "mismatches": {}
+  },
+  "hero": {
+    "selection_rule": "the lowest record_id among records with gold fraudulent where at least two arms disagree on the fraudulent label",
+    "record_order": "record_id ordered by numeric index when ids follow '<prefix>-<index>', otherwise by text; this matches the order the runner walked the split in",
+    "record_id": "test-6",
+    "split": "test",
+    "gold": "fraudulent",
+    "state_excerpt": "Subsea Process System Engineer\n\nCorporate overviewAker Solutions is a global provider of products, systems and services to the oil and gas industry. Our engineering, design and technology bring discoveries into production and maximize recovery from each petroleum field. We employ approximately 28,000 people in about 30 countries. Go to #URL_0fa3f7c5e23a16de16a841e368006cae916884407d90b154dfef39764",
+    "state_excerpt_chars": 400,
+    "state_chars": 400,
+    "state_source": "triage.data.records(split), truncated to 400 characters",
+    "engines": [
+      {
+        "arm": "classifier_dev",
+        "value": "legitimate",
+        "correct": false,
+        "confidence": 1.0,
+        "p_positive": 0.0,
+        "p_decision": 1.0
+      },
+      {
+        "arm": "tfidf",
+        "value": "fraudulent",
+        "correct": true,
+        "confidence": 0.6076665248892226,
+        "p_positive": 0.6076665248892226,
+        "p_decision": 0.6076665248892226
+      }
+    ],
+    "engines_excluded": [
+      "majority_class",
+      "dummy_stratified"
+    ],
+    "disagreeing_engine_values": [
+      "fraudulent",
+      "legitimate"
+    ]
+  }
+}
