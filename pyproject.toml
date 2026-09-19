@@ -1,0 +1,22 @@
+[project]
+name = "job-posting-triage"
+version = "0.1.0"
+description = "Four engines, one labelled test split: what a decision model buys on job posting triage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.0.1",
+    "gliner2[local]>=2.0.0",
+    "httpx>=0.28.1",
+    "huggingface-hub>=0.36.2",
+    "jsonschema>=4.26.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "protobuf>=7.36.2",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.1",
+    "sentencepiece>=0.2.2",
+    "torch>=2.14.0",
+    "transformers>=4.57.6",
+]

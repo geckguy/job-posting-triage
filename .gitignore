@@ -1,0 +1,12 @@
+.venv/
+data/
+models/
+__pycache__/
+*.py[cod]
+.env
+results/cache.jsonl
+.DS_Store
+.uv/
+.agents/
+.claude/
+skills-lock.json
